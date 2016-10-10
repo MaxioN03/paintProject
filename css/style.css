@@ -7,13 +7,15 @@ body{
  html{
  	height: 100%;
  }
+
 #content{
+padding-top: 5%;
 padding-right: 5%;
 padding-left: 10%;
 height: 95%;
 }
 
-.test{
+.workPlace{
 	width: 65%;
 	min-width: 300px;
 	max-height: 80%;	
@@ -22,18 +24,28 @@ height: 95%;
 	float: left;
 }
 
-.test2{
+.instr{
 	float: left;
 	width: 35%;
 	min-width: 300px;
 	height: 70vh;
-	max-height: 80%;
+	max-height: 80%;	
 	background: red;
 }
 
+.button{
+	float: left;	
+	width: 100%;
+	height: 25%;
+	background: #94ACE0;
+	transition: 0.1s;
+	text-align: center;
+}
+
+
+
 footer {
-	float: left;
-    
+	float: left;    
     left: 0; bottom: 0;
     padding: 2%;
     background: pink transparent;
@@ -42,8 +54,7 @@ footer {
     text-align:  center;
     font-size: 6vh;
     font-family: websymbol;
-    letter-spacing: 2vh; 
-    
+    letter-spacing: 2vh;     
     }
 
 
@@ -57,32 +68,33 @@ a:hover{
 }
 
 @font-face {
-    font-family: websymbol; /* Гарнитура шрифта */
-    src: url(../resource/fonts/websymbolsligaregular.ttf); /* Путь к файлу со шрифтом */
+    font-family: websymbol;
+    src: url(../resource/fonts/websymbolsligaregular.ttf);
    }
 
- @media screen and (min-width: 300px) and (max-width: 1024px) {
+ @media screen and (min-width: 0px) and (max-width: 1024px) {
      body { background: green; }
      #content{
+     padding-top: 0;
 	 padding-right: 0;
 	 padding-left: 0;
 	 height: 95%;
  	}
      
-    .test{
+    .workPlace{
 	width: 100%;
 	height: 60vh;
 }
 
-.test2{
-	
+.instr{	
 	width: 100%;
 	height: 30vh;
 }
    }
 
-.test2:hover{
-	box-shadow: inset 10vh 0 0 0 #fff;
+.button:hover{
+	background: #244899;
 	cursor: pointer;
+	box-shadow: inset 5vh 0 0 0 #fff;
 }
 
