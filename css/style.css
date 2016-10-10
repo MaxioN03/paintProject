@@ -1,0 +1,88 @@
+body{
+	background:  #ffe2ab;
+	font-size: 3vh;
+	margin: 0;
+}
+
+ html{
+ 	height: 100%;
+ }
+#content{
+padding-right: 5%;
+padding-left: 10%;
+height: 95%;
+}
+
+.test{
+	width: 65%;
+	min-width: 300px;
+	max-height: 80%;	
+	background: black;
+	height: 70vh;
+	float: left;
+}
+
+.test2{
+	float: left;
+	width: 35%;
+	min-width: 300px;
+	height: 70vh;
+	max-height: 80%;
+	background: red;
+}
+
+footer {
+	float: left;
+    
+    left: 0; bottom: 0;
+    padding: 2%;
+    background: pink transparent;
+    color: black;
+    width: 96%;
+    text-align:  center;
+    font-size: 6vh;
+    font-family: websymbol;
+    letter-spacing: 2vh; 
+    
+    }
+
+
+a{
+	text-decoration: none;
+	color: #000;
+	transition: 0.5s;
+}
+a:hover{
+	text-shadow: 0 0 0.5vh black;
+}
+
+@font-face {
+    font-family: websymbol; /* Гарнитура шрифта */
+    src: url(../resource/fonts/websymbolsligaregular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+ @media screen and (min-width: 300px) and (max-width: 1024px) {
+     body { background: green; }
+     #content{
+	 padding-right: 0;
+	 padding-left: 0;
+	 height: 95%;
+ 	}
+     
+    .test{
+	width: 100%;
+	height: 60vh;
+}
+
+.test2{
+	
+	width: 100%;
+	height: 30vh;
+}
+   }
+
+.test2:hover{
+	box-shadow: inset 10vh 0 0 0 #fff;
+	cursor: pointer;
+}
+
